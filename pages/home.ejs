@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include sub/head.ejs %>
+  </head>
+  <body>
+  <% include sub/header.ejs %>
+  	<div class="container">
+    <h1><%= pageTitle %> <%= detail %></h1>
+
+    <ul>
+		<% for(var i=0; i < users.length; i++) { %>
+		<li><%= users[i] %></li>
+		<% } %>
+	</ul>
+</div>
+
+    <% include sub/footer.ejs %>
+
+  </body>
+</html>
+
